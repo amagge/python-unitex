@@ -453,10 +453,10 @@ class NormalizeOptions(Options):
                 raise UnitexException("[NORMALIZE] Wrong value for the 'output_offsets' option. String required.")
         self["output_offsets"] = output_offsets
 
-        if self["input_offsets"] is None and self["output_offsets"] is not None:
-            raise UnitexException("[NORMALIZE] You must provide both input and output offsets...")
-        if self["input_offsets"] is not None and self["output_offsets"] is None:
-            raise UnitexException("[NORMALIZE] You must provide both input and output offsets...")
+        #if self["input_offsets"] is None and self["output_offsets"] is not None:
+        #    raise UnitexException("[NORMALIZE] You must provide both input and output offsets...")
+        #if self["input_offsets"] is not None and self["output_offsets"] is None:
+        #    raise UnitexException("[NORMALIZE] You must provide both input and output offsets...")
 
         no_separator_normalization = options.get("no_separator_normalization", False)
         if isinstance(no_separator_normalization, bool) is False:
